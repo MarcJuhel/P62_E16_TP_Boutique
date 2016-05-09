@@ -1,23 +1,20 @@
 <?php
-    require_once('data/data.php');
+require_once('data/data.php');
 ?>
-
-/*Affichage du catalogue*/
-<ul>
-<?php foreach ($data as $id => $item) { ?>
-    <li>
-        <div>
-            <?= $item['nom'] ?>
-            <p><?</p>
-            <img src="<?= $item['photo']?>" alt=""/>
-            
-        </div>
+<?php require_once ('views/page_top.php'); ?>
+<div id="main">
+    <!--Code html spécifique -->
+    <?php /*Affichage du catalogue*/ ?>
+    <ul>
+        <?php foreach ($data as $id => $item) { ?>
+            <li>
+                <div>
+                    <p><?= $item['nom'] ?>, <span class=".prix"><?= $item['prix'] ?></span></p>
+                    <img src="<?= $item['photo'] ?>" alt=""/>
+                </div>
             </li>
-    
-    
-    
-        ?>
-        
-    }
-?>
-</ul>
+        <?php } ?>
+    </ul>
+</div>
+<?php require_once ('views/page_bottom.php'); ?>
+

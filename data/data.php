@@ -1,32 +1,32 @@
 <?php
 /**
- * Tableau principal des donnees du site
- * Les clefs des items son
- * Date: 2016-05-09
- * Time: 10:54
+ * Tableau principal des données du site
+ * Les clefs des items sont leurs "id" (un numéro)
+ * (suivant le projet) Chaque item doit contenir au minimum les champs suivants
+ * - nom
+ * - categorie
+ * - etc
  */
 $data = array(
-   0  => array(
-       'nom' => 'item1',
-       'categorie' => 'aventure',
-       'prix' => 1899.99,
-       'photo' => 'toto.jpg',
-       'dans_carousel' => true,
-),
+    0 => array(
+        'nom' => 'Trekking',
+        'categorie' => 'aventure',
+        'prix' => 1899.99,
+        'photo' => 'toto.jpg',
+        'dans_carousel' => true,
+    ),
     1 => array(
-        'nom' => 'item1',
+        'nom' => 'Robots',
         'categorie' => 'science-fiction',
         'prix' => 489.99,
         'photo' => 'kiki.jpg',
         'dans_carousel' => false,
     ),
     2 => array(
-            'nom' => 'item1',
-            'categorie' => 'science-fiction',
-            'prix' => 88.99,
-            'photo' => 'kiki.jpg',
-            'dans_carousel' => false,
+        'nom' => 'Football',
+        'categorie' => 'sport',
+        'prix' => 88.00,
+        'photo' => 'foot.jpg',
+        'dans_carousel' => true,
     ),
-
 );
-    
