@@ -3,7 +3,7 @@
  * Ce fichier s'occupe de la partie header des pages du site
  */
 // Appel des données de menu
-require_once ('data/menu_data.php');
+require_once ('../data/data.php');
 
 ?>
 
