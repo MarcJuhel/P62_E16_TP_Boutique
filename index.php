@@ -9,7 +9,7 @@
 	<title>Site petit projet</title>
 </head>
 <body>
-    <?php require_once ('views/header.php'); ?>
+    <?php require_once (''); ?>
     <div id="principal">
         <h2><?= TP_ACCUEIL ?></h2>
 
