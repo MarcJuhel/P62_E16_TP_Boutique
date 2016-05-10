@@ -1,14 +1,7 @@
 <?php
 /**
- * Déclaration du tableau qui définit le menu
+ * Created by PhpStorm.
+ * User: mjuhel
+ * Date: 2016-05-10
+ * Time: 09:21
  */
-define('TP_ACCUEIL', 'Accueil');
-define('TP_CONTACT', 'Contact');
-
-$menu_items = array(
-    TP_ACCUEIL => 'index.php',
-    'Compagnie' => 'compagnie.php',
-    TP_CONTACT => 'contact.php',
-    'Reservation' => 'reservation.php',
-    'Quitter' => 'quitter.php',
-);
