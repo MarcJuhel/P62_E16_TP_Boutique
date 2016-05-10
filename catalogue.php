@@ -9,7 +9,7 @@ require_once('data/data.php');
         <?php foreach ($data as $id => $item) { ?>
             <li>
                 <div>
-                    <p><?= $item['nom'] ?>, <span class=".prix"><?= $item['prix'] ?></span></p>
+                    <p><?= $item['nom'] ?>, <span class=".prix"><?= $item['prix'] ?> Fifa 2016 est un jeu de soccer très populaire pour les amateurs de sport </span></p>
                     <img src="<?= $item['photo'] ?>" alt=""/>
                 </div>
             </li>
