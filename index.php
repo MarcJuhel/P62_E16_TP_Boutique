@@ -14,6 +14,9 @@
         <h2><?= TP_ACCUEIL ?></h2>
     <div>
         <?php
+        require_once ('views/login_formulaire.php');
+        ?>
+        <?php
         require_once ('views/catalogue.php');
         ?>
     </div>
