@@ -1,7 +1,7 @@
 <?php
-require_once('data/data.php');
+include('data/data.php');
 ?>
-<?php require_once ('views/page_top.php'); ?>
+<?php include ('views/page_top.php'); ?>
 <div id="main">
     <!--Code html spécifique -->
     <?php /*Affichage du catalogue*/ ?>
@@ -16,5 +16,5 @@ require_once('data/data.php');
         <?php } ?>
     </ul>
 </div>
-<?php require_once ('views/page_bottom.php'); ?>
+<?php include ('views/page_bottom.php'); ?>
 

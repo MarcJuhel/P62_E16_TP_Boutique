@@ -9,11 +9,11 @@
 	<title>Site petit projet</title>
 </head>
 <body>
-    <?php require_once ('views/header.php'); ?>
+    <?php include ('views/header.php'); ?>
     <div id="principal">
         <h2><?= TP_ACCUEIL ?></h2>
 
     </div>
-    <?php require_once ('views/footer.php'); ?>
+    <?php include ('views/footer.php'); ?>
 </body>
 </html>

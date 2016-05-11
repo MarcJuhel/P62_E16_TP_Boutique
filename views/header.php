@@ -3,18 +3,21 @@
  * Ce fichier s'occupe de la partie header des pages du site
  */
 // Appel des données de menu
-require_once ('../data/data.php');
-
+include ('/data/menu_data.php');
 ?>
 
+
 <div id="header">
-    <ul>
+    <h3>Haut de page</h3>
+
         <?php
-        // Afficher le menu avec un foreach
-        foreach ($menu_items as $libelle => $url) {
-            echo "<li><a href='$url'>$libelle</a></li>";
-        }
+
+        echo '<img src="images/header_fond.png" alt="fond">';
+		
         ?>
-    </ul>
+
 </div>
+
+
+
 
