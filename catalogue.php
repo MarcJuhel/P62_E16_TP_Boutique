@@ -1,5 +1,5 @@
 <?php
-require_once('data/data.php');
+include('data/data.php');
 ?>
 <?php require_once ('views/page_top.php'); ?>
 <div id="main">

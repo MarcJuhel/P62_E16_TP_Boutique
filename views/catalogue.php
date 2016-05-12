@@ -1,5 +1,5 @@
 <?php
-include ('data.php');
+include ('../data/data.php');
 foreach ($sports as $clef => $valeur) {
     echo '<a href="/">', $sports[$clef]['nom'], '</a><br>';
     echo '<a href="/">', $sports[$clef]['prix'], '</a><br>';
