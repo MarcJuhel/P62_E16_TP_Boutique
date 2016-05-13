@@ -1,7 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: mjuhel
- * Date: 2016-05-09
- * Time: 13:39
- */
+
+?>
+
+<div id ="page top">
+    <h3>Page top</h3>
+
+    <?php
+    echo '<img src="images/header_fond.png" alt="fond">';
+    ?>
+
+    </div>

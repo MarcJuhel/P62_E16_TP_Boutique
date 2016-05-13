@@ -3,7 +3,7 @@
  * Ce fichier s'occupe de la partie footer des pages du site
  */
 // Appel des données de menu
-include ('/data/menu_data.php');
+include ('data/menu_data.php');
 
 ?>
 
