@@ -21,8 +21,11 @@ include ('data/menu_data.php');
     echo '<a href="views/signup.php" class="navRegister">Inscrivez-vous</a>';
     echo '<a href="/AccountManagement/UserOrderMenu" class="navOrders">Mes commandes</a>'
     ?>
-
 </div>
+<?php
+require_once ("login_formulaire.php");
+
+
 
 
 
