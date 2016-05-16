@@ -1,0 +1,92 @@
+
+
+.fond{
+
+    position : relative;
+    left : 600px;
+    margin-top : -29px;
+    right : 600px;
+}
+
+.navLogin{
+    position : relative;
+    top : -214px;
+    left : 1336px;
+    color : white;
+    font-size : 20px;
+}
+
+.navRegister{
+    position : relative;
+    top : -214px;
+    left : 1370px;
+    color : white;
+    font-size :20px;
+}
+
+.navOrders {
+    position :relative;
+    top : -214px;
+    left : 1400px;
+    color : white;
+    font-size : 20px;
+
+}
+
+.cartEmpty {
+    position : relative;
+    top : -164px;
+    left : 1746px;
+    color : white;
+    font-size : 20px;
+}
+
+.logo {
+    position : relative;
+    top : 85px;
+    left : 970px;
+
+}
+
+.topfond {
+    position : relative;
+    left : 865px;
+    margin-top : -29px;
+    right : 600px;
+    top:20px;
+}
+
+.xone {
+    position : relative;
+    top : -14px;
+    left : 1386px;
+    color : white;
+    font-size : 20px;
+}
+
+.x360 {
+    position : relative;
+    top : -57px;
+    left : 1285px;
+    color : white;
+    font-size : 20px;
+
+}
+#meilleuresventes{
+    position : relative;
+    top : 60px;
+    left : -645px;
+    color: black;
+    font-size : 30px;
+}
+
+.imagetop {
+    display :inline-block;
+    position: relative;
+    top : 20px;
+    left : 770px;
+    padding : 20px;
+    margin-left : auto;
+    margin-right : auto;
+    text-align : center;
+}
