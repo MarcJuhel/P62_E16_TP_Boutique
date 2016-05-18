@@ -1,4 +1,11 @@
 <?php
+require_once ("db/password_functs.php");
+$con=mysqli_connect("localhost","root","","p62_login");
+// Check connection
+if (mysqli_connect_errno())
+{
+    echo "mysql fail yo" . mysqli_connect_error();
+}
 
 //var_dump($_SERVER['REQUEST_METHOD']);
 
@@ -71,12 +78,14 @@ if ($receiving && array_key_exists('login', $_POST)) {
         $login_msg_validation = "Le nom d'utilisateur doit contenir entre 6 et 12 caractere";
     }
 }
-$mdp = ""; // Contenu du champ prenom
+$mdp = " "; // Contenu du champ prenom
 $mdp_valide = true; // Le champ est valide par défaut
 $mdp_msg_validation = ''; // Le message à renvoyer à l'utilisateur si le champ penom n'est pas valide
 if ($receiving && array_key_exists('mdp', $_POST)) {
     // Filtrer les caractères invalides (caractères incompatibles avec le SQL)
     $mdp = filter_input(INPUT_POST, 'mdp', FILTER_SANITIZE_STRING);
+   $password = $mdp;
+    $mdp = passwd_encrypt($password);
     // Validation du nom avec
     $mdp_valide = (1 === preg_match('/\w{5,15}/', $mdp));
     if (!$mdp_valide) {
@@ -95,6 +104,17 @@ if ($receiving && array_key_exists('email', $_POST)) {
         $email_msg_validation = "Le nom d'utilisateur doit contenir entre 6 et 12 caractere";
     }
 }
+
+mysqli_query($con,"SELECT * FROM user");
+mysqli_query($con,"INSERT INTO user (username, password_hash,firstname,lastname,email)
+VALUES ('$login','$mdp','$prenom','$nom','$email')");
+
+mysqli_close($con);
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -126,7 +146,7 @@ if ($receiving && array_key_exists('email', $_POST)) {
 <h3 class="sous_titre">Information personnelle</h3>
 
 
-<form method="post"><!-- Par défaut la méthode est get-->
+<form  method="post"><!-- Par défaut la méthode est get-->
     <p <?= $receiving && ( ! $nom_valide) ? 'class="invalide"' : '' ?>>
         <label for="nom">Nom :</label>
         <input id="nom" type="text" name="nom" value="<?= $nom ?>"/>
@@ -178,7 +198,7 @@ if ($receiving && array_key_exists('email', $_POST)) {
     </p>
     <p <?= $receiving && ( ! $mdp_valide) ? 'class="invalide"' : '' ?>>
         <label for="mdp">Mot de passe :</label>
-        <input id="mdp" type="text" name="mdp" value="<?= $mdp ?>"/>
+        <input id="mdp" type="password" name="mdp" value="<?= $mdp ?>"/>
         <?php if ($receiving && (!$mdp_valide)) {
             echo "<span class='msg_validation'>$mdp_msg_validation<span>";
         } ?>
