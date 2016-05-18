@@ -168,13 +168,34 @@
 #footer {
   position: relative;
     left : 804px;
-    top : -69px;
+    top : 0px;
 
 }
 
 .carte{
     position: relative;
     left : 815px;
-    top : -5px;
+    top : 64px;
+    text-align :center;
+}
 
+#catalogue p{
+    display:  inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-left: 20px;
+    width: 250px;
+}
+
+h2{
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-bottom: 1px;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: white;
+    background-color: black;
 }

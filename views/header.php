@@ -16,11 +16,12 @@ include ('data/menu_data.php');
 
 
     <?php
-    echo '<img src="images/header_fond.png" alt="fond" class="fond">';echo '<img src="images/gamesRus.jpeg" alt="gamesRus" class="logo">';
-    echo '<h4 class="cartEmpty">Mon Panier</h4>';
+    echo '<img src="images/header_fond.png" alt="fond" class="fond">';
+    echo '<img src="images/gamesRus.jpeg" alt="gamesRus" class="logo">';
+    echo '<a href="https://www.ebgames.ca/Cart/Index"><h4 class="cartEmpty">Mon Panier</h4>';
     echo '<a href="" class="navLogin">Login</a>';
     echo '<a href="views/signup.php" class="navRegister">Inscrivez-vous</a>';
-    echo '<a href="/AccountManagement/UserOrderMenu" class="navOrders">Mes commandes</a>'
+    echo '<a href="commande.php" class="navOrders">Mes commandes</a>'
     ?>
 
 </div>

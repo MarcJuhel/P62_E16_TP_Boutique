@@ -9,13 +9,14 @@ include('data/data.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style/catalogue_css.css">
+    <link rel="stylesheet" href="style/main.css">
+
     <meta charset="UTF-8">
     <title>Catalogue</title>
 </head>
 <body>
     <div id="header">
-        <?php require_once ('views/page_top.php'); ?>
+        <?php require_once ('views/header.php'); ?>
     </div>
 
     <div id="catalogue">
@@ -67,7 +68,7 @@ include('data/data.php');
     </div>
 
     <div id="footer">
-        <?php require_once ('views/page_bottom.php'); ?>
+        <?php require_once ('views/footer.php'); ?>
     </div>
 </body>
 </html>
