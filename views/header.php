@@ -6,10 +6,11 @@
 include ('data/menu_data.php');
 ?>
 
+<div id ="recherche">
 
-<input type="text" name="q" class="quickSearchInput ui-autocomplete-input" data-autocomplete-source="/QuickSearch/LoadAutocomplete" >
+<input type="text" name="q" class="quickSearchInput ui-autocomplete-input" data-autocomplete-source="/QuickSearch/LoadAutocomplete"<p> Rechercher sur le site !</p>
 
-
+</div>
 
 <div id="header">
 
