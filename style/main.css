@@ -1,4 +1,8 @@
-
+#recherche{
+    position : relative;
+    left : 1485px;
+    top : 185px;
+}
 
 .fond{
 
@@ -43,8 +47,8 @@
 
 .logo {
     position : relative;
-    top : 85px;
-    left : 970px;
+    top : 175px;
+    left : 700px;
 
 }
 
@@ -74,10 +78,10 @@
 }
 #meilleuresventes{
     position : relative;
-    top : 60px;
-    left : -645px;
+    top : 10px;
+    left : 664px;
     color: black;
-    font-size : 30px;
+    font-size : 20px;
 }
 
 .imagetop {
@@ -89,4 +93,109 @@
     margin-left : auto;
     margin-right : auto;
     text-align : center;
+}
+#banierre {
+    position :relative;
+    left: 212px;
+    top : 32px;
+
+}
+
+#new{
+    position :relative;
+    left: 660px;
+    top : 55px;
+    color : black;
+    font-size : 20px;
+}
+.nouv{
+    position :relative;
+    left:894px;
+    top: 100px;
+}
+
+.dark{
+    position :relative;
+    left:759px;
+    top: 235px;
+}
+
+.over{
+    position :relative;
+    left:637px;
+    top: 90px;
+}
+
+#ligne{
+    position :relative;
+    left:809px;
+    top: 294px;
+}
+
+#txtbottom1{
+    position :relative;
+    left:926px;
+    top: 489px;
+}
+
+#txtbottom2{
+    position :relative;
+    left:927px;
+    top: 118px;
+}
+
+#txtbottom3{
+    position :relative;
+    left:1355px;
+    top: -60px;
+}
+
+
+#txtbottom4{
+    position :relative;
+    left:926px;
+    top: 139px;
+}
+
+.widget {
+
+   display : block;
+    position : relative;
+    left : 1470px;
+    top :-360px;
+}
+
+#footer {
+  position: relative;
+    left : 804px;
+    top : 0px;
+
+}
+
+.carte{
+    position: relative;
+    left : 815px;
+    top : 64px;
+    text-align :center;
+}
+
+#catalogue p{
+    display:  inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-left: 20px;
+    width: 250px;
+}
+
+h2{
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-bottom: 1px;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: white;
+    background-color: black;
 }
