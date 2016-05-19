@@ -14,40 +14,52 @@ include('data/data.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style/catalogue_css.css">
+    <link rel="stylesheet" href="../style/catalogue_css.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Commande</title>
 </head>
 <body>
 
-    <!-- HEADER + PPAGE TOP -->
+    <!-- HEADER + PAGE TOP -->
     <div id="header">
         <?php require_once ('views/header.php'); ?>
     </div>
     <div id="top">
         <?php require_once ('views/page_top.php'); ?>
     </div>
+
     <!-- Formulaire -->
-    <div>
+    <div id="form_global">
+        <h3>Entrez vos informations personnelles (tous les champs sont obligatoires)</h3>
+
+        <div id="formulaire_commande">
         <p>
             <!-- METTRE DE L'ORDRE DANS LE FORMULAIRE (CSS) -->
             <form id="commande" action="" method="post">
-            <label id="infos_perso">Entrez vos informations personnelles</label><br>
-                Nom:<input type="text" name="nom" value=""><br>
-                Prénom:<input type="text" name="prenom" value=""><br>
-                Adresse:<input type="text" name="adresse" value=""><br>
-                Code Postal:<input type="text" name="code_post" value=""><br>
-                Province<input type="text" name="province" value=""><br>
-                Pays:<input type="text" name="pays" value=""><br>
-                Numéro de Carte de Crédit<input type="password" name="num_carte" value=""><br>
+            <label for="nom">Nom: </label><br>
+                <input type="text" name="nom" id="nom" required value="">*<br>
+            <label for="prenom">Prénom: </label><br>
+                <input type="text" name="prenom" id="prenom" required value="">*<br>
+            <label for="adresse">Adresse</label><br>
+                <input type="text" name="adresse" id="adresse" required value="">*<br>
+            <label for="code_post">Code Postal</label><br>
+                <input type="text" name="code_post" id="code_post" required value="">*<br>
+            <label for="province">Province</label><br>
+                <input type="text" name="province" id="province" required value="">*<br>
+            <label for="pays">Pays</label><br>
+                <input type="text" name="pays" id="pays" required value="">*<br>
+            <label for="num_carte">Numéro de carte de crédit</label><br>
+                <input type="password" name="num_carte" id="num_carte" required value="">*<br><br>
                 <button type="submit" name="commander">Passer la Commande</button>
             </form>
         <p>
             <a href="http://localhost/p62_exercices/tp_test/catalogue.php">Retour au catalogue</a>
         </p>
+    </div>
 
-        <!-- Affiche Jeu Sélectionné -->
-        <p id="produit_commande">
+    <div id="produit_commande">
+        <p>
+            <!-- Affiche Jeu Sélectionné -->
             <?php
 
             // ---------- affiche image ------------------------
@@ -120,6 +132,7 @@ include('data/data.php');
             }
             ?>
         </p>
+    </div>
     </div>
     <div id="bottom">
         <?php require_once ('views/page_bottom.php'); ?>

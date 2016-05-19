@@ -1,3 +1,4 @@
+/* catalogue*/
 #catalogue p{
     display:  inline-block;
     font-size: 22px;
@@ -17,4 +18,85 @@ h2{
     margin-left: 50px;
     color: white;
     background-color: black;
+}
+
+#sections a{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-bottom: 1px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+
+
+/*page détails*/
+
+#detail{
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-left: 5px;
+    width: 250px;
+}
+
+#infos_liens{
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-left: 5px;
+}
+
+#infos_liens a{
+    font-weight: bold;
+}
+
+
+/*page formulaire*/
+
+#choix_jeu, #infos_perso{
+    font-weight: bold;
+    color: chocolate;
+}
+
+form #commande input, button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#form_global div{
+    display: inline-block;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-left: 5px;
+    width: 30%;
+}
+
+div #produit_commande{
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-left: 20px;
+    width: 250px;
+}
+
+#form_global h3{
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-bottom: 1px;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: white;
+    background-color: black;
+}
+
+#formulaire_commande a{
+    font-weight: bold;
 }
